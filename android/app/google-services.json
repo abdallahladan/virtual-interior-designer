@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "864847888171",
+    "project_id": "virtual-interior-designe-96dbb",
+    "storage_bucket": "virtual-interior-designe-96dbb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864847888171:android:2a9e0e6bd5b581a23acf6e",
+        "android_client_info": {
+          "package_name": "com.example.virtual_interior_designer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvvuP3eSzCp9MvK5wdERg1t6yHKmbiAVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
