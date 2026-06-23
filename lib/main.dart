@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'room.dart';
 import 'room_selection_screen.dart';
-import 'room_designer_screen.dart';
 
 void main() {
   runApp(const MyApp());
