@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'room.dart';
+import 'room_designer_screen.dart';
 
 class RoomSelectionScreen extends StatefulWidget {
   const RoomSelectionScreen({super.key});
@@ -51,11 +52,11 @@ class _RoomSelectionScreenState extends State<RoomSelectionScreen> {
                 ),
                 itemCount: allRooms.length,
                 itemBuilder: (context, index) {
-                  final room = allRooms[index];
+                  final roomType = allRooms[index];
                   return _RoomCard(
-                    roomType: room,
+                    roomType: roomType,
                     onTap: () {
-                      _selectRoom(room);
+                      _selectRoom(roomType);
                     },
                   );
                 },
@@ -69,13 +70,12 @@ class _RoomSelectionScreenState extends State<RoomSelectionScreen> {
 
   void _selectRoom(RoomType roomType) {
     final room = Room.create(roomType);
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text('Opening ${room.name}...'),
-        duration: const Duration(seconds: 1),
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => RoomDesignerScreen(room: room),
       ),
     );
-    // TODO: Navigate to room designer screen
   }
 }
 
